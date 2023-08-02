@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "test-pytest"
+version = "0.1.0"
+description = ""
+authors = ["masatoomori <23582786+masatoomori@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "test_pytest"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
