@@ -3,18 +3,18 @@
 ## Installation
 
 ```bash
-poetry add pytest
+poetry add pytest --dev
+poetry add pytest-srcpaths --dev
 ```
 
 ## Setting
 
-テストファイルのあるディレクトリに `__init__.py` を作成し、下記のように記述する。
+`pyproject.toml` に以下の設定を追加する。
 
-```python
-import sys
-import os
-
-sys.path.append('path/to/your/project/root')
+```toml
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["sample_pytest"]
 ```
 
 ## Usage

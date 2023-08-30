@@ -1,4 +1,4 @@
-from src.module_1.prime import is_prime
+from sample_pytest.module_1.prime import is_prime
 
 
 def test_is_prime(is_prime_test_data):
